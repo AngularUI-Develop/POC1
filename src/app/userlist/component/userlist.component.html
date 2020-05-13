@@ -1,0 +1,27 @@
+<div class="">
+  <h3>User List</h3>
+  <br> 
+<table id="customers">
+  <thead>
+     <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Avator</th>
+        
+     </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let dataval of dataArray">
+        <th>{{ dataval.id }}</th>
+        <td>{{ dataval.email }}</td>
+        <td>{{ dataval.first_name }}</td>
+        <td>{{ dataval.last_name }}</td>
+        <td>{{ dataval.avatar}}</td>
+    
+        
+     </tr>
+  </tbody>
+</table>
+</div>
