@@ -13,7 +13,10 @@ export class UserService {
 
     return result;
   }
-  registerUser(userdetails:User){
+  /*registerUser(userdetails:User){
     return this.http.post('https://reqres.in/api/register',userdetails);
+  }*/
+  postRequest(body): Observable<User[]> {
+    return this.http.post<User[]>('https://reqres.in/api/register', body);
   }
 }
